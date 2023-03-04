@@ -1,0 +1,152 @@
+:root{
+    --green: #59ce8f;
+    --yellow: #fec868;
+    --white: #e8f9fd;
+    --red: #ef255f;
+    
+}
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('./image/pexels-pixabay-70842.jpg');
+    background-position:center;
+    background-attachment: fixed; 
+}
+
+.landing{
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    width:100vw;
+    color:var(--white);
+    min-width: 720px;
+}
+
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+header{
+    display: flex;
+    padding:1em;
+    font-weight: bold;
+}
+
+#logo{
+    flex:3;
+    font-size: 2.5em;
+}
+
+nav{
+    flex:2;
+    display:flex;
+}
+
+nav a{
+    flex:1;
+    font-size: 1.5em;
+    text-align: center;
+    align-self: center;
+}
+
+nav a:hover{
+    color:var(--green);
+    font-size: 2em;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+}
+
+.maintext div{
+    margin-top:0.75em;
+}
+
+
+.tagline1{
+    color:var(--green);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color:var(--yellow);
+}
+
+button{
+    width:20vw;
+    min-width: 200px;
+    margin-top:0.75em;
+    border-radius: 10px;
+    padding:1em;
+    background-color: var(--red);
+    color:var(--white);
+    font-size:1.3em;
+    border:1px solid var(--red);
+}
+
+.menu{
+    display:grid;
+    /* background:linear-gradient(to right, rgb(100,100,100), rgb(53, 52, 52)); */
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(175px,1fr));
+    margin-bottom: 1em;
+}
+
+#menuheading, #location{
+    font-size: 2em;
+    color: var(--yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color:var(--green);
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.location{
+    color:var(--white);
+    display: flex;
+    padding:1em;
+    /* justify-content: center; */
+}
+.location h2{
+    color:var(--green);
+    margin-bottom: .8em;
+}
+.location div{
+    flex:1;
+}
+.footer{
+    background-color: var(--white);
+    padding:.25em 1em;
+}
+
